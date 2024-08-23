@@ -1,0 +1,53 @@
+@media only screen and (max-width: 900px) {
+    body{
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    
+    #sidebar{
+        display: none;
+    }
+
+    #container{
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card_agricultor{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .card img{
+        width: 50%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .card p{
+        margin-bottom: 15px;    
+    }
+
+    #box{
+        width: 200px;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #card_agricultor{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .card img{
+        width: 50%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+}
