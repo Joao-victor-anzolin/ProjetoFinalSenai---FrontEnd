@@ -7,11 +7,29 @@
     --dark2: #024035;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-track {
+    background: var(--medium-green);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark1);
+}
+
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     transition: all 0.4s ease-in-out;
+}
+
+#container a{
+    text-decoration:none ;
+    color: black;
 }
 
 body{
@@ -35,6 +53,22 @@ body{
     left: 0;
     color: white;
     overflow-y: hidden;
+}
+
+#sidebar-mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--main-green);
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    color: white;
+    overflow-y: hidden;
+    z-index: 999;
 }
 
 #container{
@@ -108,7 +142,6 @@ body{
     width: 13em;
     border-radius: 50px;
     font-family: Roboto;
-    
 }
 
 .btn_style:hover{
@@ -121,7 +154,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 #input_search{
@@ -131,6 +164,7 @@ body{
     padding: 0 20px 0 0;
     font-size: 0.6em;
     outline: none;
+    width: 100%;
 }
 
 #box{
@@ -139,14 +173,15 @@ body{
     font-size: 18px;
     border: 1px solid black;
     border-radius: 50px;
-    width: 280px;
-    height: 28px;
+    width: 400px;
+    height: 30px;
+
 
 }
 
 .iconsearch{
     padding: 0px 10px;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 #card_agricultor{
@@ -168,4 +203,85 @@ body{
 
 .card{
     text-align: center;
+}
+
+#header_mobile{
+    background-color: var(--main-green);
+    width: 100%;
+    height: 5em;
+    display: none;
+    
+}
+
+.icon_menu{
+    font-size: 15px;
+    color: white;
+}
+
+.button_menu{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first{
+    margin-top: 60px;
+}
+
+/* Card Produto */
+
+.cardprod{
+    width: 240px;
+    padding: 30px;
+    border: 1px solid var(--dark2);
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.imgprod{
+    width: 240px;
+    height: 240px;
+}
+
+.imgcard{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+}
+
+.infocard{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000 ;
+}
+
+.sub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;    
+    height: auto;
+}
+
+.secondary{
+    color: #999999;
+    font-size: 0.8em;
+}
+
+.price{
+    color: #0A5C36;
+    font-size: 0.8em;
+}
+
+#cardline{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }

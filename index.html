@@ -11,6 +11,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <div id="header_mobile">
+        <button onclick=showSidebar() class="button_menu">
+            <i class="fa-solid fa-bars icon_menu"></i>
+        </button>
+
+        <div id="sideitem">
+            <a href="#"><i class="fa-solid fa-cart-shopping icon_menu"></i></a>
+            <button class="btn_style cadastrar"">Cadastrar-se</button>
+        </div>
+        <div id="sidebar-mobile">
+            <div id="nav">
+                <button onclick=hideSidebar() class="button_menu">
+                    <i class="fa-solid fa-bars icon_menu"></i>
+                </button>
+                <!-- Home -->
+                <div class="navitem">
+                    <i class="fa-solid fa-house icon"></i>
+                    <a href="index.html" class="navlink">Home</a>
+                </div>
+                <!-- Produtos -->
+                <div class="navitem">
+                    <i class="fa-solid fa-leaf icon"></i>
+                    <a href="index.html" class="navlink">Produtos</a>
+                </div>
+                <!-- Agricultores -->
+                <div class="navitem">
+                    <i class="fa-solid fa-user icon"></i>
+                    <a href="index.html" class="navlink">Agricultores</a>
+                </div>
+                <!-- Mapa -->
+                <div class="navitem">
+                    <i class="bi bi-geo-alt-fill icon"></i>
+                    <a href="index.html" class="navlink">Mapa</a>
+                </div>
+                <!-- Compras -->
+                <div class="navitem">
+                    <i class="bi bi-basket-fill icon"></i>
+                    <a href="index.html" class="navlink">Compras</a>
+                </div>
+                <!-- Sobre -->
+                <div class="navitem">
+                    <i class="bi bi-info-circle icon"></i>
+                    <a href="index.html" class="navlink">Sobre</a>
+                </div>
+            </div>
+            <div class="line white"></div>
+            <div id="bottom">
+                <button class="btn_style"">Entrar</button>
+
+            </div>
+        </div>
+    </div>
+
     <div id="sidebar">
         <div id="logocontainer">
             <img src="img/Logo.svg" alt="Logo" id="logo">
@@ -61,10 +114,29 @@
         </div>
     </div>
     <div id="container">
-        <p>Início</p>
-        <div class="line pad"></div>
+        <p class="first hidden">Início</p>
+        <div class="line pad hidden"></div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/banner/1.png" style="width:100%">
+    
+            </div>
+    
+            <div class="mySlides fade">
+    
+                <img src="img/banner/2.png" style="width:100%">
+    
+            </div>
+    
+            <div class="mySlides fade">
+    
+                <img src="img/banner/3.png" style="width:100%">
+    
+            </div>
+        </div>
         <div id="SearchContainer">
-            <p>Agricultores</p>
+            <a href="#card_agricultor"><p>Agricultores</p></a>
             <div id="box">
                 <i class="fa-solid fa-magnifying-glass iconsearch"></i>
                 <input type="text" name="Search" placeholder="Encontre o que precisa:" id="input_search">
@@ -92,6 +164,62 @@
                 <p>Rosa Mendes</p>
             </div>
         </div>
+        <div id="SearchContainer">
+            <a href="#cardline"><p>Produtos</p></a>
+            <div id="box">
+                <i class="fa-solid fa-magnifying-glass iconsearch"></i>
+                <input type="text" name="Search" placeholder="Encontre o que precisa:" id="input_search">
+            </div>
+        </div>
+        <div class="line pad"></div>
+        <div id="cardline">
+            <div id="cardproduto">
+                <div class="cardprod">
+                    <div class="imgprod">
+                        <img src="img/produtos/cabbage.svg" alt="" class="imgcard">
+                    </div>
+                    <a href="" class="infocard">Cabeça Alface Americana Hidropônica</a>
+                    <div class="sub">
+                        <a href="" class="secondary">Orlando Savieiro</a>
+                        <p class="price">R$ 1,50</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cardprod">
+                <div class="imgprod">
+                    <img src="img/produtos/carrot.svg" alt="" class="imgcard">
+                </div>
+                <a href="" class="infocard">Cenoura Un.</a>
+                <div class="sub">
+                    <a href="" class="secondary">Rosa Mendes</a>
+                    <p class="price">R$ 2,08</p>
+                </div>
+            </div>
+    
+            <div class="cardprod">
+                <div class="imgprod">
+                    <img src="img/produtos/tomato.png" alt="" class="imgcard">
+                </div>
+                <a href="" class="infocard">Tomate Kg</a>
+                <div class="sub">
+                    <a href="" class="secondary">Tio Benedito</a>
+                    <p class="price">R$ 5,90</p>
+                </div>
+            </div>
+    
+            <div class="cardprod">
+                <div class="imgprod">
+                    <img src="img/produtos/borba.svg" alt="" class="imgcard">
+                </div>
+                <a href="" class="infocard">Abobrinha 500g</a>
+                <div class="sub">
+                    <a href="" class="secondary">Orlando Savieiro</a>
+                    <p class="price">R$ 8,50</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script src="https://kit.fontawesome.com/d566b63b60.js" crossorigin="anonymous"></script>
