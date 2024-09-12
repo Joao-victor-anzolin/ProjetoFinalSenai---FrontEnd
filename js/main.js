@@ -22,3 +22,11 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 6000);
 }
+
+function entrar(){
+  window.location.href="loginCliente.html";
+}
+
+function register(){
+  window.location.href="registerCliente.html";
+}
