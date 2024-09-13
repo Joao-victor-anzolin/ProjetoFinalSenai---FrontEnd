@@ -119,6 +119,32 @@
         width: 12em;
         margin-right: 12px;
     }
+
+    .aboutinfo img{
+        display: none;
+        width: 0%;
+    }
+
+    .aboutinfo div{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .aboutinfo .imgabout{
+        width: 0;
+    }
+    .aboutinfo .imgabout2{
+        width: 0;
+    }
+    .aboutinfo{
+        text-align: center;
+    }
+    .member-line{
+        display: flex;
+        flex-wrap: wrap ;
+    }
 }
 
 @media only screen and (max-width: 700px) {

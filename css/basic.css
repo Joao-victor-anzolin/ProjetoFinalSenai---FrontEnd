@@ -236,12 +236,14 @@ body{
 
 #card{
     background-color: white;
-    height: 300px;
+    height: 320px;
     width: 250px;
     border-radius: 15px;
     padding: 20px;
     border: 0.5px black solid;
     text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #imgcard{
@@ -300,4 +302,65 @@ body{
     justify-content: space-around;
 
     margin-bottom: 50px;
+}
+
+/* Sobre */
+
+.aboutinfo{
+    display: flex;
+    width: 80%;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutinfo h2{
+    margin-bottom: 15px;
+}
+
+.aboutinfo div{
+    width: 50%;
+}
+
+.aboutinfo .imgabout{
+    width: 50%;
+    text-align: end;
+}
+
+.aboutinfo .imgabout2{
+    width: 50%;
+    text-align: start;
+}
+
+.aboutinfo img{
+    width: 80%;
+}
+
+.member{
+    text-align: center;
+}
+
+.member span{
+    text-align: center;
+    font-size: .9em;
+}
+
+.member-line{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.member img{
+    width: 80%;
+    border-radius: 100%;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.member img:hover{
+    transform: translateY(-20px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
