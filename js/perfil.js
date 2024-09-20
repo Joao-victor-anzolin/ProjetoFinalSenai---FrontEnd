@@ -7,15 +7,18 @@ function loadFile(event) {
 }
 
 let count = 0;
-        
-        function increment() {
-            count++;
-            document.getElementById('counter').innerText = count;
-        }
+function increment(counterId) {
+    const counterElement = document.getElementById(counterId);
+    let count = parseInt(counterElement.innerText);
+    count++;
+    counterElement.innerText = count;
+}
 
-        function decrement() {
-            if (count > 0) {
-                count--;
-            }
-            document.getElementById('counter').innerText = count;
-        }
+function decrement(counterId) {
+    const counterElement = document.getElementById(counterId);
+    let count = parseInt(counterElement.innerText);
+    if (count > 0) {
+        count--;
+    }
+    counterElement.innerText = count;
+}

@@ -1,0 +1,298 @@
+
+/*HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Localização</title>
+    <link rel="stylesheet" href="stle.css"> 
+</head>
+<body>
+    <p class="sub">Pedidos em Andamento</p>
+    <div class="tableProd">
+
+        <div class="line"></div>
+        <div class="title">
+
+            <p class="itemtable">Produto</p>
+
+            <p class="itemtable">Preço</p>
+
+            <p class="itemtable">Quantidade</p>
+
+            <p class="itemtable">Total</p>
+
+            <p class="itemtable">Dados do Comprador</p>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content">
+
+            <div class="contentTable imgTable">
+
+                <img src="cabbage.svg" alt="alface">
+
+                <p>Alface Crespa Un.</p>
+
+            </div>
+
+            <p class="contentTable">R$ 2,50</p>
+
+            <p class="contentTable">2</p>
+
+            <p class="contentTable">R$ 5,00</p>
+
+            <p class="contentTable">
+                Roberto Cristo Costa<br>
+                Rua São João N°754, Indaiatuba - SP<br>
+                Pagamento via Pix<br>
+                Entrega<br>
+            </p>
+
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <p class="sub">Pedidos Carrinho</p>
+    <div class="tableProd">
+
+        <div class="line"></div>
+        <div class="title">
+
+            <p class="itemtableFIRST">Produto</p>
+
+            <p class="itemtable2">Preço</p>
+
+            <p class="itemtable2">Quantidade</p>
+
+            <p class="itemtable2">Total</p>
+
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content">
+
+            <div class="contentTableFIRST imgTable2">
+
+                <img src="cabbage.svg" alt="alface">
+                <div>
+                    <p>Alface Crespa Un.</p>
+                    <span>Tio Paulo</span>
+                </div>
+
+
+            </div>
+
+            <p class="contentTable2">R$ 2,50</p>
+
+            
+            <div class="counterdiv contentTable2">
+                <button onclick="decrement('counter1')" class="">-</button>
+                <span id="counter1">1</span>
+                <button onclick="increment('counter1')">+</button>
+            </div>
+
+            <p class="contentTable2">R$ 5,00</p>
+
+
+
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <p class="sub">Pedidos Finalizar</p>
+    <div class="tableProd">
+
+        <div class="line"></div>
+        <div class="title">
+
+            <p class="itemtable">Produto</p>
+
+            <p class="itemtable">Preço</p>
+
+            <p class="itemtable">Quantidade</p>
+
+            <p class="itemtable">Total</p>
+
+            <p class="itemtable">Finalizar</p>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content">
+
+            <div class="contentTable imgTable">
+
+                <img src="cabbage.svg" alt="alface">
+
+                <p>Alface Crespa Un.</p>
+
+            </div>
+
+            <p class="contentTable">R$ 2,50</p>
+
+            <p class="contentTable">2</p>
+
+            <p class="contentTable">R$ 5,00</p>
+
+            <p class="contentTable">
+                <button>Compra Finalizada</button>
+            </p>
+
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="counterdiv">
+        <button onclick="decrement('counter1')" class="">-</button>
+        <span id="counter1">1</span>
+        <button onclick="increment('counter1')">+</button>
+    </div>
+
+    <div class="counterdiv">
+        <button onclick="decrement('counter2')">-</button>
+        <span id="counter2">2</span>
+        <button onclick="increment('counter2')">+</button>
+    </div>
+
+
+    <div class="counterdiv"> 
+        <button onclick="decrement('counter3')">-</button>
+        <span id="counter3">3</span>
+        <button onclick="increment('counter3')">+</button>
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEWm9bDB3dYTOsG06v27JgbCaQWqiqL_o"></script>
+</html>
+
+/*Css
+
+.counterdiv{
+    background-color: #aeaeae;
+    padding: 10px;
+    height: 5px;
+    width: 80px !important;
+    margin-right: auto;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counterdiv button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sub{
+    text-decoration: underline;
+}
+
+.itemtable{
+    width: 20%;
+}
+.itemtableFIRST{
+    width: 30%;
+}
+.itemtable2{
+    width: 23%;
+}
+
+.line{
+    background-color: black;
+    width: 100%;
+    height: 0.5px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgTable{
+    width: 20%;
+}
+
+.imgTable img{
+    width: 150px;
+    max-width: 150px;
+    margin: 0px;
+}
+
+.imgTable img{
+    max-width: 150px;
+    margin: 0px;
+}
+
+.contentTable{
+    width: 20%;
+}
+
+.contentTable2{
+    width: 23%;
+}
+
+.contentTableFIRST{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contentTableFIRST img{
+    width: 150px;
+    max-width: 150px;
+}
+
+.contentTableFIRST span{
+    font-size: 0.9em;
+    margin: 0;
+    color: #939393;
+}
+
+.contentTable button{
+    background-color: #0A5C36;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50PX;
+    cursor: pointer;
+}
+
+/*JavaScript
+
+function increment(counterId) {
+    const counterElement = document.getElementById(counterId);
+    let count = parseInt(counterElement.innerText);
+    count++;
+    counterElement.innerText = count;
+}
+
+function decrement(counterId) {
+    const counterElement = document.getElementById(counterId);
+    let count = parseInt(counterElement.innerText);
+    if (count > 0) {
+        count--;
+    }
+    counterElement.innerText = count;
+}
