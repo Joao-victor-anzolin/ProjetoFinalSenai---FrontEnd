@@ -30,3 +30,4 @@ function entrar(){
 function register(){
   window.location.href="registerCliente.html";
 }
+

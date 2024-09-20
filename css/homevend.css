@@ -40,9 +40,11 @@
 body{
     display: flex;
     height: 100vh;
+    flex-direction: column;
     position: relative;
     font-family: Roboto;
     font-size: .9em;
+    width: 100%;
 }
 
 #sidebar{
@@ -86,7 +88,7 @@ body{
 #containerAgricultor{
     padding-left: 30px;
     padding-right: 30px;
-    width: 100%;
+    height: 100vh;
 }
 
 #logo{
@@ -413,5 +415,6 @@ body{
 }
 
 .map_search svg{
+    margin-right: 2px;
     font-size: medium;
 }

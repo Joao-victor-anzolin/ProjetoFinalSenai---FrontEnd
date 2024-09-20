@@ -38,13 +38,17 @@ thead{
 }
 
 #a1 {
-    margin-right: 22px;
+    max-width: 120px;
+}
+
+#cenoura {
+    width: 120px;
 }
 
 #a2 {
     margin-bottom: 0px; 
-    margin-top: 70px;
-    margin-right: 108px;
+    margin-top: 60px;
+    margin-right: 125px;
 }
 
 #a3 {
@@ -54,8 +58,9 @@ thead{
 }
 
 #a4 {
-    margin-top: 70px; 
+    margin-top: 60px; 
 }
+
 
 #a5 {
     margin-top: 70px;
