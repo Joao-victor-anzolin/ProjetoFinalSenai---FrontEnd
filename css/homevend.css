@@ -7,6 +7,33 @@
     --dark2: #024035;
 }
 
+.headerVendedor{
+    background-color: #0A5C36;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: white;
+    padding: 0px 10px;
+}
+
+.map_search1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map_search1 button{
+    background-color: var(--main-green);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
   }
@@ -45,6 +72,30 @@ body{
     font-family: Roboto;
     font-size: .9em;
     width: 100%;
+}
+
+.title{
+    display: flex;
+}
+.rate{
+    display: flex;
+}
+.textAgericultor{
+    display: flex;
+}
+.containerText{
+    margin-left: 20px;
+}
+
+.profileAgricultor{
+    max-width: 150px;
+    border-radius:100% ;
+}
+
+.rate{
+    display: flex;
+    font-size: 1.1em;
+    align-items: center;
 }
 
 #sidebar{
@@ -431,6 +482,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-y: hidden;
 }
 .counterdiv button{
     background-color: transparent;
@@ -440,6 +492,7 @@ body{
 
 .sub{
     text-decoration: underline;
+    padding: 10px 0px;
 }
 
 .itemtable{
@@ -461,6 +514,7 @@ body{
 .title{
     display: flex;
     justify-content: space-between;
+    padding: 10px 0px;
 }
 
 .content{
@@ -508,6 +562,7 @@ body{
     font-size: 0.9em;
     margin: 0;
     color: #939393;
+    height: 10px;
 }
 
 .contentTable button{
